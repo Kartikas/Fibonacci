@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Fibonacci2
+{
+	public static void main(String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.print("Masukkan angka fibonacci : ");
+		int n = s.nextInt();
+		int a=0;
+		int b=1;
+		int hasil=0;
+		for(int i=1;i<=n;i++) {
+			System.out.print(" ");
+			a=a+b;
+			b=a-b;
+			hasil=hasil+a;
+		}
+		System.out.print(hasil);
+	
+}
+}
